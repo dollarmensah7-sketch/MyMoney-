@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f5f9;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #0b7a4b;
+    border-radius: 50%;
+
+    font-size: 35px;
+}
+
+h1 {
+    text-align: center;
+    color: #0b7a4b;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+
+    margin-top: 25px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #0b7a4b;
+    color: white;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#message {
+    text-align: center;
+    margin-top: 15px;
+    color: red;
+}
+.dashboard {
+    width: 100%;
+    max-width: 600px;
+    min-height: 100vh;
+    background: #f2f5f9;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+header h2 {
+    color: #0b7a4b;
+}
+
+header p {
+    color: #777;
+    margin-top: 5px;
+}
+
+.logout {
+    width: auto;
+    margin: 0;
+    padding: 10px 15px;
+    background: #d62828;
+    font-size: 14px;
+}
+
+.balance-card {
+    background: #0b7a4b;
+    color: white;
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.balance-card p {
+    opacity: 0.9;
+}
+
+.balance-card h1 {
+    color: white;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.actions button {
+    margin: 0;
+    background: white;
+    color: #0b7a4b;
+    border: 1px solid #ddd;
+}
+
+.transactions {
+    background: white;
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.transactions h2 {
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+.empty {
+    color: #888;
+    text-align: center;
+    padding: 20px;
+}
+select {
+    width: 100%;
+    padding: 14px;
+
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    font-size: 16px;
+    background: white;
+}

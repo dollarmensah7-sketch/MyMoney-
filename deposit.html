@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MyMoney - Deposit</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="login-container">
+
+    <h1>Deposit Money</h1>
+
+    <p class="subtitle">
+        Add money to your MyMoney balance
+    </p>
+
+    <label>Amount (GHS)</label>
+
+    <input
+        type="number"
+        id="depositAmount"
+        placeholder="Enter amount"
+        min="1"
+    >
+
+    <label>Mobile Network</label>
+
+    <select id="network">
+
+        <option value="">Select network</option>
+        <option value="MTN">MTN Mobile Money</option>
+        <option value="Telecel">Telecel Cash</option>
+        <option value="AirtelTigo">AirtelTigo Money</option>
+
+    </select>
+
+    <label>Mobile Money Number</label>
+
+    <input
+        type="tel"
+        id="phone"
+        placeholder="e.g. 0241234567"
+    >
+
+    <button onclick="makeDeposit()">
+        Continue Deposit
+    </button>
+
+    <button
+        onclick="goDashboard()"
+        style="background:#777;"
+    >
+        Back to Dashboard
+    </button>
+
+    <p id="depositMessage"></p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

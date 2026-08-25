@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MyMoney Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <header>
+        <div>
+            <h2>MyMoney</h2>
+            <p>Welcome, Admin</p>
+        </div>
+
+        <button class="logout" onclick="logout()">
+            Logout
+        </button>
+    </header>
+
+    <section class="balance-card">
+
+        <p>Available Balance</p>
+
+        <h1 id="balance">
+            GHS 0.00
+        </h1>
+
+    </section>
+
+    <section class="actions">
+
+        <button onclick="window.location.href='deposit.html'">
+    💰 Deposit
+</button>
+            
+        
+
+        <button onclick="window.location.href='transfer.html'">
+    📤 Transfer
+</button>
+           
+        
+
+        <button onclick="window.location.href='withdraw.html'">
+    💸 Withdraw
+</button>
+           
+        
+
+        
+          <button onclick="transactionsPage()">
+    📋 Transactions
+</button>
+        
+
+    </section>
+
+    <section class="transactions">
+
+        <h2>Recent Transactions</h2>
+
+        <div id="transactionList">
+            <p class="empty">
+                No transactions yet.
+            </p>
+        </div>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

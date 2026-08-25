@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MyMoney - Withdraw</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="login-container">
+
+    <h1>Withdraw Money</h1>
+
+    <p class="subtitle">
+        Cash out to your mobile-money account
+    </p>
+
+    <label>Amount (GHS)</label>
+
+    <input
+        type="number"
+        id="withdrawAmount"
+        placeholder="Enter amount"
+        min="1"
+    >
+
+    <label>Mobile Network</label>
+
+    <select id="withdrawNetwork">
+
+        <option value="">Select network</option>
+        <option value="MTN">MTN Mobile Money</option>
+        <option value="Telecel">Telecel Cash</option>
+        <option value="AirtelTigo">AirtelTigo Money</option>
+
+    </select>
+
+    <label>Mobile Money Number</label>
+
+    <input
+        type="tel"
+        id="withdrawPhone"
+        placeholder="e.g. 0241234567"
+    >
+
+    <button onclick="makeWithdrawal()">
+        Continue Withdrawal
+    </button>
+
+    <button
+        onclick="goDashboard()"
+        style="background:#777;"
+    >
+        Back to Dashboard
+    </button>
+
+    <p id="withdrawMessage"></p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
